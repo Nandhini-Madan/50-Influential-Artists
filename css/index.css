@@ -92,7 +92,7 @@ nav {
   text-align: center;
 }
 nav a {
-  color: rgba(40, 44, 49, 0.664);
+  color: black;
   display: flex;
   padding: 10px;
   text-decoration: none;
@@ -104,7 +104,7 @@ nav a {
   margin: 0 auto;
   background-color: white;
 }
-@media (max-width: 500px) {
+@media (max-width:500px) {
   .home {
     width: 500px;
     padding-right: 2%;
@@ -116,7 +116,7 @@ nav a {
   padding: 10px;
   align-items: center;
 }
-@media (max-width: 500px) {
+@media (max-width:500px) {
   .home .title-container img {
     width: 500px;
     padding-left: 2%;
@@ -153,7 +153,7 @@ nav a {
   padding: 10px;
   background-color: white;
 }
-@media (max-width: 500px) {
+@media (max-width:500px) {
   .home .title-container .center button {
     padding: 5px;
   }
@@ -164,7 +164,7 @@ nav a {
   justify-content: space-evenly;
   width: 100%;
 }
-@media (max-width: 500px) {
+@media (max-width:500px) {
   .home .artists-container {
     display: flex;
     flex-direction: column;
@@ -174,7 +174,7 @@ nav a {
   width: 50%;
   display: flex;
   flex-direction: column;
-  color: rgba(40, 44, 49, 0.664);
+  color: black;
 }
 @media (max-width: 500px) {
   .home .artists-container .artist {
@@ -193,10 +193,8 @@ nav a {
   opacity: 80%;
 }
 .home .artists-container .artist a {
-  color: rgba(40, 44, 49, 0.664);
+  color: black;
   text-align: center;
-  padding-left: 20px;
-  margin-left: 0px;
   padding-bottom: 10px;
   text-decoration: none;
 }
