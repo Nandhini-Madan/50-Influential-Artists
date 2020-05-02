@@ -2,12 +2,26 @@
     max-width: 800px;
     width: 100%;
     margin: 0 auto;
+    background-color: @background-color;
+    @media (max-width:500px){
+        width: 500px;
+        padding-right: 2%;
+        padding-left: 2%;
+    }
    
     .title-container{
         img{
             width: 800px;
             padding: 10px;
             align-items: center;
+            @media (max-width:500px){
+                width: 500px;
+                padding-left: 2%;
+                padding-right: 2%;
+            }
+        }
+        img:hover{
+            opacity: 80%;
         }
         
         .center {
@@ -17,6 +31,10 @@
             transform: translate(-50%, -50%);
             display: flex;
             flex-direction: column;
+            @media @mobile{
+                top: 25%;
+                left: 50%;
+            }
             p{
                 font-size: 1.8rem;
                 font-weight: bolder;
@@ -28,7 +46,10 @@
             }
             button{
                 padding: 10px;
-                background-color: white;
+                background-color:@background-color;
+                @media(max-width:500px){
+                    padding: 5px;
+                }
             }
           }
        }
@@ -38,11 +59,19 @@
         flex-direction: row;
         justify-content: space-evenly;
         width: 100%;
+        @media(max-width:500px){
+            .flex-column();
+        }
         .artist{
             width: 50%;
-            display: flex;
-            flex-direction: column;
-            padding-left: 30px;
+            .flex-column();
+           
+            color:@font-color;
+            @media(max-width:500px){
+                width: 100%;
+                align-items: center;
+                
+            }
 
             img{
                 width: 80%;
@@ -50,12 +79,19 @@
                 padding: 10px;
                 align-items: center;
                 padding-left: 10px;
+                
             }
+           img:hover{
+                opacity: 80%;
+            }
+           
                 a{
+                    color: @font-color;
                     text-align:center;
                     padding-left: 20px;
                     margin-left: 0px;
                     padding-bottom: 10px;
+                    text-decoration: none;
                     
                 }
                 .bio{

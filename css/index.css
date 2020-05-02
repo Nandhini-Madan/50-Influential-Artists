@@ -92,6 +92,7 @@ nav {
   text-align: center;
 }
 nav a {
+  color: rgba(40, 44, 49, 0.664);
   display: flex;
   padding: 10px;
   text-decoration: none;
@@ -101,11 +102,29 @@ nav a {
   max-width: 800px;
   width: 100%;
   margin: 0 auto;
+  background-color: white;
+}
+@media (max-width: 500px) {
+  .home {
+    width: 500px;
+    padding-right: 2%;
+    padding-left: 2%;
+  }
 }
 .home .title-container img {
   width: 800px;
   padding: 10px;
   align-items: center;
+}
+@media (max-width: 500px) {
+  .home .title-container img {
+    width: 500px;
+    padding-left: 2%;
+    padding-right: 2%;
+  }
+}
+.home .title-container img:hover {
+  opacity: 80%;
 }
 .home .title-container .center {
   position: absolute;
@@ -114,6 +133,12 @@ nav a {
   transform: translate(-50%, -50%);
   display: flex;
   flex-direction: column;
+}
+@media (max-width:500px) {
+  .home .title-container .center {
+    top: 25%;
+    left: 50%;
+  }
 }
 .home .title-container .center p {
   font-size: 1.8rem;
@@ -128,17 +153,34 @@ nav a {
   padding: 10px;
   background-color: white;
 }
+@media (max-width: 500px) {
+  .home .title-container .center button {
+    padding: 5px;
+  }
+}
 .home .artists-container {
   display: flex;
   flex-direction: row;
   justify-content: space-evenly;
   width: 100%;
 }
+@media (max-width: 500px) {
+  .home .artists-container {
+    display: flex;
+    flex-direction: column;
+  }
+}
 .home .artists-container .artist {
   width: 50%;
   display: flex;
   flex-direction: column;
-  padding-left: 30px;
+  color: rgba(40, 44, 49, 0.664);
+}
+@media (max-width: 500px) {
+  .home .artists-container .artist {
+    width: 100%;
+    align-items: center;
+  }
 }
 .home .artists-container .artist img {
   width: 80%;
@@ -147,11 +189,16 @@ nav a {
   align-items: center;
   padding-left: 10px;
 }
+.home .artists-container .artist img:hover {
+  opacity: 80%;
+}
 .home .artists-container .artist a {
+  color: rgba(40, 44, 49, 0.664);
   text-align: center;
   padding-left: 20px;
   margin-left: 0px;
   padding-bottom: 10px;
+  text-decoration: none;
 }
 .home .artists-container .artist .bio {
   text-align: center;
